@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 import random
 import networkx as nx
+import matplotlib
+matplotlib.use('Agg')  # Usar un backend no interactivo para Matplotlib
 import matplotlib.pyplot as plt
 from io import BytesIO
 import base64
